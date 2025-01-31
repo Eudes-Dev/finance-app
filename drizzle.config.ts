@@ -5,7 +5,6 @@ config({ path: '.env.local' })
 
 export default defineConfig({
     schema: './db/schema.ts',
-    dialect: '',
     driver: 'pg',
     dbCredentials: {
         connectionString: process.env.DATABASE_URL!,
